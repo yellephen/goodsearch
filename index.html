@@ -1,0 +1,39 @@
+
+<link rel="stylesheet" href="goosearch.css">
+<pre class="title">
+ ________                  .___   _________                           .__     
+ /  _____/  ____   ____   __| _/  /   _____/ ____ _____ _______   ____ |  |__  
+/   \  ___ /  _ \ /  _ \ / __ |   \_____  \_/ __ \\__  \\_  __ \_/ ___\|  |  \ 
+\    \_\  (  <_> |  <_> ) /_/ |   /        \  ___/ / __ \|  | \/\  \___|   Y  \
+ \______  /\____/ \____/\____ |  /_______  /\___  >____  /__|    \___  >___|  /
+        \/                   \/          \/     \/     \/            \/     \/ 
+</pre>
+<div class="container">
+	<input id="myInput" type="text" class="inputbox">
+</div>
+
+
+<script>
+var inputElement = document.getElementById("myInput");
+
+var domains = [
+"github.io", 
+"medium.com",
+"reddit.com",
+"microsoft.com",
+"twitter.com",
+"hacklido.com/blog/"
+];
+
+inputElement.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                var inputValue = inputElement.value;
+                domains.forEach(function(domain){
+                	window.open("https://google.com/search?q=site:" + domain + " " + inputValue,'_blank')
+                	
+                });
+                window.open("https://google.com/search?q=" + inputValue,'_blank')
+            }
+        });
+
+</script>

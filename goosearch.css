@@ -1,0 +1,26 @@
+.title {
+  font-family:courier;
+  font-size: 10pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background-color: #800080;
+} 
+
+.inputbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  width: 450px; 
+}
+  
+.container {
+  text-align: center;
+}
+
+body {
+    background-color: #006400; /* Replace with your desired color code or name */
+}
